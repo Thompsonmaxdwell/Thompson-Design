@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    margin: 0 0 2em; 
+}
+.container{
+     width:97%;
+     margin:0 auto;
+     overflow: hidden;
+     height: 100%; 
+     margin: 0 auto;
+     position:relative;
+     box-shadow:0px 0px 30px hsla(0, 0%, 0%, 0.808);
+}
+
+/* .header_content */
+header{
+    width: 100%;
+    position:fixed;
+  
+  
+}
+.header_content{
+    width:90%;
+    margin: 0 auto;
+    overflow: hidden; 
+  
+   
+}
+
+/* logo-brand" */
+.logo-brand{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+  
+  
+}
+.logo-img{
+   background: #fff;
+   width: 18px;
+   color:#000;
+   font-weight:800;
+   padding:.4px 3px;
+   display: grid;
+   place-items: center;
+   border-radius:50% ;
+   -webkit-border-radius:50% ;
+   -moz-border-radius:50% ;
+   -ms-border-radius:50% ;
+   -o-border-radius:50% ;
+}
+.logo-text{
+    position: absolute;
+    top: -2px;
+    color:#fff;
+    font-weight: 100;
+    font-size:1em;
+    padding: 1em 0 0 20px;
+   
+}
+ .section-img{
+     background: blue;
+     color: rgba(255, 255, 255, 0.856);
+     line-height: 2;
+     width:30px;
+     border-radius: 37%;
+     -webkit-border-radius: 37%;
+     -moz-border-radius: 37%;
+     -ms-border-radius: 37%;
+     -o-border-radius: 37%;
+}
+.sectiion-logo-wrapper{
+     display: flex;
+     justify-content: center;
+     margin: 2em 0;
+ }
+ .section-text{
+     color: #000;
+     font-weight: 150;
+     font-size:1em;
+     padding: 3px 0 0 2px;
+   
+ }
+/* burgar-icon */
+.burgar-icon{
+    color: #000;
+    font-size: 1.3em;
+    cursor: pointer;  
+}
+/* ul styling here */
+
+/* /close-btn */
+.close-btn{
+    cursor: pointer;
+    color:red;
+    font-size: 1.7em;
+}
+.close-btn:hover ,.burgar-icon:hover{
+    color:#fff;
+}
+/* nav */
+
+/* ============================nav-wrapper-======================= */
+.nav-wrapper{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav-content{
+    height:100vh;
+    position: absolute;
+    right: -27em;
+    width: 50%;
+    top: -1.68em;
+    padding: 2em;
+    background:#444444;
+    transition: all 1.3s ease-in-out;
+    -webkit-transition: all 1.3s ease-in-out;
+    -moz-transition: all 1.3s ease-in-out;
+    -ms-transition: all 1.3s ease-in-out;
+    -o-transition: all 1.3s ease-in-out;
+   
+}
+
+.nav-open{
+    right:0;
+    animation: mm 1s ease-in-out;
+    -webkit-animation: mm 1s ease-in-out;
+}
+@keyframes mm{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding:  0  10px;
+}
+ul li{
+    line-height: 2;
+}
+nav ul   .active{
+    border-bottom: 1px solid #fff;
+    padding-bottom: .1em;
+
+}
+
+ul li:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1em;
+    transition: all .7s ease-in-out       ;
+    -webkit-transition: all .7s ease-in-out       ;
+    -moz-transition: all .7s ease-in-out       ;
+    -ms-transition: all .7s ease-in-out       ;
+    -o-transition: all .7s ease-in-out       ;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+}
+ul li a:hover{
+    color:#000;
+
+}
+/* sign in button */
+.btn-sign-in{
+    font-size: 1.2em;
+    background: lightblue;
+    border:none;
+    line-height: 2;
+    display: grid;
+    padding: 0 10px;
+    margin:2em 0;
+    width:100%;
+    place-items: center;
+    border-radius:20px;
+    color: #fff;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.btn-sign-in:hover{
+       background: blue;
+    transition: all ease-in-out 1s;
+
+}
+/* header_content */
+
+
+/* background color */
+.bg-wrapper{
+    height: 570px;
+}
+.bg-wrapper .bg_img{
+    background: url('../img/bb.jpg');
+    position:absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    width:100%;
+    z-index: -1;
+}
+.bg-wrapper .bg_img::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 570;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,  rgba(24, 66, 255, 0.383), 27%, rgb(37, 169, 246));
+}
+
+/*  main styling here */
+main{
+    width:100%;
+    padding-top:4em;
+  
+}
+
+main .main-content-wrapppr{
+    width: 77%;
+    margin: 0 auto;
+
+}
+
+ /* text */
+.main-content-text h1{
+    color:#ffff;
+    font-weight:450;
+}
+.main-content-text p{
+    color:rgba(255, 255, 255, 0.897);
+    padding-top: .2em;
+   
+}
+
+/* phone image */
+.main-content-img{
+    width: 50%;
+    margin:  0 auto;
+}
+.main-content-img img{
+    height:300px;
+    display: inline-block;
+    
+    
+}
+/* downlaod botton */
+.btn_wrapper{
+    margin: 0 auto;
+    width: 40%;
+}
+.download-btn{
+    border: none;
+    padding: 12px 20px;
+    background: whitesmoke;
+    margin: .4em  0 1.4em 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-borderradius: 25px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+.download-btn:hover{
+    background: blue;
+    color:#ffff;
+    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+}
+
+/* section-text-wrapper */
+.section-text-wrapper{
+    margin: 0 auto;
+
+}
+.section-content{
+    padding:8em 0 0;
+    width:90%;
+    margin: 0 auto;
+    
+}
+.section-content p{
+    padding: 0 3em;
+    text-align:center;
+    margin:0 auto;
+    color: rgb(53, 97, 138);
+    
+}
+
+

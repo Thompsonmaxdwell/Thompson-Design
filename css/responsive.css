@@ -1,0 +1,132 @@
+@media screen and (min-width:940px){
+    /* .burgar-icon */
+    .burgar-icon{
+        display: none;
+        margin: 0;
+    }
+    /* .close-btn */
+    .close-btn{
+        display: none;
+    }
+    /* .header_conten */
+    header{
+        background-image: linear-gradient(to right, rgba(0, 0, 244, 0.164),rgb(37, 169, 246));
+        opacity: .8;
+        width: 95%;
+        position:fixed;
+      
+    }
+    .header_content{
+        width: 97%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: .5em 0;
+    }
+    .logo-brand{
+        margin: 7px 0;
+        width:20%;
+        padding: 0;
+    }
+    /* logo-brand" */
+.logo-brand{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.logo-text{
+    position: absolute;
+    top: 15px;
+    color:#fff;
+    font-weight: 100;
+    font-size:1em;
+    padding: 0 0 0 20px;
+}
+    /* .nav-content */
+    .nav-wrapper{
+        width: 63%;
+    }
+   
+    .nav-content{
+         width: 100%;
+         height: auto;
+         position: relative;
+         right: 0;
+         padding: 0;
+         top: 0;
+         background: none;
+         display: flex;
+         justify-content: space-between;
+
+    }
+    nav ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li{
+        margin-right: 1em;
+    }
+    /* .btn-sign-in */
+    .btn_wrapper{
+        margin: 0 ;
+        width:100%;
+    }
+    .btn-sign-in{
+        margin: 0;
+        width: 100%;
+        line-height:1.8;
+        padding: 0 30px;
+    }
+
+    /* main .main-content-wrapppr */
+    main{
+        padding-top:11em;
+    }
+    main .main-content-wrapppr{
+        display: flex;
+        width:70%;
+        margin: 0 auto;
+      
+        
+    }
+    /* phone image */
+    .main-content-img img{
+        margin-right:1.5em;
+        height:450px;
+    }
+    .main-content-text{
+       padding: 4em 13em 0 0;
+    }
+    .main-content-text h1{
+        padding: 0 0 .5em 0;
+    }
+    .main-content-text p{
+        padding: 0 0 1em;
+    }
+    .section-content{
+        width:50%;
+        margin: 0 auto;
+        
+    }
+    /* section-text-wrapper */
+    .section-content p{
+        text-align:center;
+        margin:0 auto;
+        color: rgb(53, 97, 138);
+        
+    }
+    
+}
+
+/* resonsive for desktop */
+@media screen and (min-width:1000px){
+    main .main-content-wrapppr{
+        display: flex;
+        width:60%;
+        margin: 0 auto;
+        
+    }
+}
